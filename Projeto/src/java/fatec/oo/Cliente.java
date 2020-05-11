@@ -11,5 +11,9 @@ package fatec.oo;
  */
 public class Cliente {
     String nome;
-    
+    String cpf;
+    String rg;
+    String email;
+    String telefone;
+    String logradouro;
 }
