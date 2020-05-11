@@ -9,10 +9,10 @@ package fatec.oo;
  *
  * @author DÉBORACRISTINABRANDÃ
  */
-public class Cliente {
+public class Fornecedor {
     String nome;
-    String cpf;
-    String rg;
+    String razao_social;
+    String cnpj;
     String email;
     String telefone;
     String logradouro;
