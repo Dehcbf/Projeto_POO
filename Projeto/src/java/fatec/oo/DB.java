@@ -15,13 +15,34 @@ public class DB {
     private static ArrayList<Cliente> clientes;
     
     public static ArrayList<Cliente> getClientes(){
+        if(clientes == null){
+            clientes = new ArrayList<>();
+            Cliente cliente = new Cliente();
+            cliente.setNome("Olaf");
+            cliente.setEmail("olaf@gmail.net");
+            cliente.setCpf("345.432.533.23");
+            cliente.setTelefone("12 34443-3243");
+            cliente.setRg("123.322.344-3");
+            cliente.setLogradouro("Rua das flores, 303");
+            clientes.add(cliente);
+        }
         return clientes;
     }
     
-    private static ArrayList<Fornecedor> fornecedor;
+    private static ArrayList<Fornecedor> fornecedores;
     
     public static ArrayList<Fornecedor> getFornecedores(){
         
-        return fornecedor;
+        if(fornecedores == null){
+            fornecedores = new ArrayList<>();
+            Fornecedor f = new Fornecedor();
+            f.setEmail("umbrellas@gmail.net");
+            f.setCnpj("43.323.663/0001");
+            f.setTelefone("12 5322-3423");
+            f.setRazao_social("Umbrella");
+            f.setLogradouro("Rua dos fornecedores, sem nº");
+            fornecedores.add(f);
+        }
+        return fornecedores;
     }
 }

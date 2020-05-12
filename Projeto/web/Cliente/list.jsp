@@ -14,6 +14,7 @@
         <title>Cliente - Lista</title>
     </head>
     <body>
+        <%@include file="../WEB-INF/jspf/menu.jspf"%>
         <h1>Lista de clientes</h1>
         <%if(DB.getClientes()!= null){%>
         <table border="1">
