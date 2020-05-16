@@ -36,10 +36,11 @@ public class DB {
         if(fornecedores == null){
             fornecedores = new ArrayList<>();
             Fornecedor fornecedor = new Fornecedor();
+            fornecedor.setNome("Umbrella");
             fornecedor.setEmail("umbrellas@gmail.net");
             fornecedor.setCnpj("43.323.663/0001");
             fornecedor.setTelefone("12 5322-3423");
-            fornecedor.setRazao_social("Umbrella");
+            fornecedor.setRazao_social("Guarda Chuvas Ltda");
             fornecedor.setLogradouro("Rua dos fornecedores, sem nº");
             fornecedores.add(fornecedor);
         }
