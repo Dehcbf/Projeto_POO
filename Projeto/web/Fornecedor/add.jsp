@@ -11,7 +11,7 @@
         if (request.getParameter("add") != null) {
 
             if (!request.getParameter("nome").toString().isEmpty() && !request.getParameter("cnpj").toString().isEmpty()
-                    && !request.getParameter("razão social").toString().isEmpty() && !request.getParameter("email").toString().isEmpty()
+                    && !request.getParameter("razao_social").toString().isEmpty() && !request.getParameter("email").toString().isEmpty()
                     && !request.getParameter("tel").toString().isEmpty() && !request.getParameter("end").toString().isEmpty()) {
 
                 Fornecedor fornecedor = new Fornecedor();

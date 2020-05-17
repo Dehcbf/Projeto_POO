@@ -35,13 +35,14 @@ public class DB {
         
         if(fornecedores == null){
             fornecedores = new ArrayList<>();
-            Fornecedor f = new Fornecedor();
-            f.setEmail("umbrellas@gmail.net");
-            f.setCnpj("43.323.663/0001");
-            f.setTelefone("12 5322-3423");
-            f.setRazao_social("Umbrella");
-            f.setLogradouro("Rua dos fornecedores, sem nº");
-            fornecedores.add(f);
+            Fornecedor fornecedor = new Fornecedor();
+            fornecedor.setNome("Umbrella");
+            fornecedor.setEmail("umbrellas@gmail.net");
+            fornecedor.setCnpj("43.323.663/0001");
+            fornecedor.setTelefone("12 5322-3423");
+            fornecedor.setRazao_social("Umbrella LTDA");
+            fornecedor.setLogradouro("Rua dos fornecedores, sem nº");
+            fornecedores.add(fornecedor);
         }
         return fornecedores;
     }

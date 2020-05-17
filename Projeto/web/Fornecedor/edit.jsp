@@ -16,13 +16,13 @@
     
     if(request.getParameter("edit") != null){
         if (!request.getParameter("nome").toString().isEmpty() && !request.getParameter("cnpj").toString().isEmpty()
-                    && !request.getParameter("razão social").toString().isEmpty() && !request.getParameter("email").toString().isEmpty()
+                    && !request.getParameter("razao_ocial").toString().isEmpty() && !request.getParameter("email").toString().isEmpty()
                     && !request.getParameter("tel").toString().isEmpty() && !request.getParameter("end").toString().isEmpty()) {
 
 
                 fornecedor.setNome(request.getParameter("nome").toString());
                 fornecedor.setCnpj(request.getParameter("cnpj").toString());
-                fornecedor.setRazao_social(request.getParameter("razão social").toString());
+                fornecedor.setRazao_social(request.getParameter("razao_social").toString());
                 fornecedor.setEmail(request.getParameter("email").toString());
                 fornecedor.setTelefone(request.getParameter("tel").toString());
                 fornecedor.setLogradouro(request.getParameter("end").toString());
