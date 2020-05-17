@@ -18,7 +18,7 @@
 
                 fornecedor.setNome(request.getParameter("nome").toString());
                 fornecedor.setCnpj(request.getParameter("cnpj").toString());
-                fornecedor.setRazao_social(request.getParameter("razão social").toString());
+                fornecedor.setRazao_social(request.getParameter("razao_social").toString());
                 fornecedor.setEmail(request.getParameter("email").toString());
                 fornecedor.setTelefone(request.getParameter("tel").toString());
                 fornecedor.setLogradouro(request.getParameter("end").toString());
@@ -50,9 +50,9 @@
         <form method="post">
             <label for="nome">Nome do fornecedor:</label>
             <input type="text" name="nome"><br><br>
-            <label for="nome">CPF do fornecedor:</label>
+            <label for="nome">CNPJ do fornecedor:</label>
             <input type="text" name="cnpj"><br><br>
-            <label for="nome">RG do fornecedor:</label>
+            <label for="nome">Razão social do fornecedor:</label>
             <input type="text" name="razão social"><br><br>
             <label for="nome">Email do fornecedor:</label>
             <input type="text" name="email"><br><br>

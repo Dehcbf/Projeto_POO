@@ -9,14 +9,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     String aviso = null;
-    int i = Integer.parseInt(request.getParameter("i"));
+    int j = Integer.parseInt(request.getParameter("j"));
     Fornecedor fornecedor = null;
     
-    fornecedor = DB.getFornecedores().get(i);
+    fornecedor = DB.getFornecedores().get(j);
     
     if(request.getParameter("edit") != null){
         if (!request.getParameter("nome").toString().isEmpty() && !request.getParameter("cnpj").toString().isEmpty()
-                    && !request.getParameter("razao_ocial").toString().isEmpty() && !request.getParameter("email").toString().isEmpty()
+                    && !request.getParameter("razao_social").toString().isEmpty() && !request.getParameter("email").toString().isEmpty()
                     && !request.getParameter("tel").toString().isEmpty() && !request.getParameter("end").toString().isEmpty()) {
 
 
@@ -27,7 +27,7 @@
                 fornecedor.setTelefone(request.getParameter("tel").toString());
                 fornecedor.setLogradouro(request.getParameter("end").toString());
                 
-                DB.getFornecedores().set(i, fornecedor);
+                DB.getFornecedores().set(j, fornecedor);
                 response.sendRedirect("list.jsp");
                        
             }
