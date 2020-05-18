@@ -41,25 +41,90 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Fornecedor - Editar</title>
+        
+         <style>
+            *{
+                font-family: arial;
+                margin: 0px;
+            }
+            
+            body{
+                background-color: wheat;
+            }
+            
+            header{
+                margin-bottom: 20px;
+                padding-bottom: 20px; 
+            }
+            
+            foorter{
+                clear: both;
+                padding: 10px;
+            }
+            .container{ /* Altera o estilo da classe */
+                width: 960px;
+                margin: 10px; 
+                overflow: auto;
+                text-align: left;
+            }
+            
+            .conteudo{
+                margin-top: 15px;
+                background-size: 100%;
+                min-height: 420px;
+                clear: both;
+                text-align: left;
+            }
+            
+            .conteudo a{
+                color: black;
+                text-decoration: none;
+                font-size: 40px;
+                padding-right: 60px;
+            }
+            
+            .conteudo a:hover{
+                color: darkkhaki;
+            }
+            
+            .bottom{
+                text-align: center;
+            }
+        </style>
+        
     </head>
     <body>
-        <%@include file="../WEB-INF/jspf/menu.jspf" %>
-        <h1>Editar cliente</h1>
-        <form method="post">
-            <label for="nome">Nome do fornecedor:</label>
-            <input type="text" name="nome" value="<%=fornecedor.getNome()%>"><br><br>
-            <label for="nome">Razão Social:</label>
-            <input type="text" name="razao_social" value="<%=fornecedor.getRazao_social()%>"><br><br>
-            <label for="nome">CNPJ:</label>
-            <input type="text" name="cnpj" value="<%=fornecedor.getCnpj()%>"><br><br>
-            <label for="nome">Email do Fornecedor:</label>
-            <input type="text" name="email" value="<%=fornecedor.getEmail()%>"><br><br>
-            <label for="nome">Telefone do fornecedor:</label>
-            <input type="text" name="tel" value="<%=fornecedor.getTelefone()%>"><br><br>
-            <label for="nome">Endereço do cliente:</label>
-            <input type="text" name="end" value="<%=fornecedor.getLogradouro()%>"><br><br>
-            <input type="submit" name="edit" value="Editar fornecedor"><br>
-        </form>
+        <header>
+            <div class="top">
+                <%@include file="../WEB-INF/jspf/menu.jspf"%>
+            </div>
+        </header>
         
+        <div class="container">
+            <div class="conteudo">
+                <h1>Editar fornecedor</h1>
+                <form method="post" class="conteudo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" value="<%=fornecedor.getNome()%>"><br><br>
+                    <label for="nome">Razão Social:</label>
+                    <input type="text" name="razao_social" value="<%=fornecedor.getRazao_social()%>"><br><br>
+                    <label for="nome">CNPJ:</label>
+                    <input type="text" name="cnpj" value="<%=fornecedor.getCnpj()%>"><br><br>
+                    <label for="nome">Email:</label>
+                    <input type="text" name="email" value="<%=fornecedor.getEmail()%>"><br><br>
+                    <label for="nome">Telefone:</label>
+                    <input type="text" name="tel" value="<%=fornecedor.getTelefone()%>"><br><br>
+                    <label for="nome">Endereço:</label>
+                    <input type="text" name="end" value="<%=fornecedor.getLogradouro()%>"><br><br>
+                    <input type="submit" name="edit" value="Editar fornecedor"><br>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <div id="bottom">
+               <%@include file="../WEB-INF/jspf/footer.jspf" %>
+            </div>
+        </footer>
     </body>
 </html>

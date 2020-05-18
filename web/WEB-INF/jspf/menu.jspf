@@ -1,6 +1,29 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<a href="../index.html">Mudar operaçao</a> | 
+
+<style>
+    *{
+        margin: 0px;
+        font-family: arial;
+    }
+    
+    #menu{
+        padding: 25px 15px 0px 10px;
+        height: 50px;
+        background-color: darkkhaki;
+    }
+    
+    #menu a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    
+</style>
+
+<div id="menu">
+<a href="../index.jsp">Tela inicial</a> | 
 <a href="list.jsp"> Lista</a> - 
 <a href="add.jsp">Adicionar novo</a>
+</div>
 <hr>

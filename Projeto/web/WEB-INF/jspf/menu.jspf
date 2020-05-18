@@ -1,6 +1,16 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<a href="../index.html">Mudar operaçao</a> | 
+<style>
+    *{
+        margin: 0px;
+    }
+    
+    a{
+        
+    }
+</style>
+
+<a href="../index.html">Tela inicial</a> | 
 <a href="list.jsp"> Lista</a> - 
 <a href="add.jsp">Adicionar novo</a>
 <hr>

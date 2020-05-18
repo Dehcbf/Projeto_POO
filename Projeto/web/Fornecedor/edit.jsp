@@ -9,10 +9,10 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     String aviso = null;
-    int j = Integer.parseInt(request.getParameter("j"));
+    int i = Integer.parseInt(request.getParameter("i"));
     Fornecedor fornecedor = null;
     
-    fornecedor = DB.getFornecedores().get(j);
+    fornecedor = DB.getFornecedores().get(i);
     
     if(request.getParameter("edit") != null){
         if (!request.getParameter("nome").toString().isEmpty() && !request.getParameter("cnpj").toString().isEmpty()
@@ -27,7 +27,7 @@
                 fornecedor.setTelefone(request.getParameter("tel").toString());
                 fornecedor.setLogradouro(request.getParameter("end").toString());
                 
-                DB.getFornecedores().set(j, fornecedor);
+                DB.getFornecedores().set(i, fornecedor);
                 response.sendRedirect("list.jsp");
                        
             }
